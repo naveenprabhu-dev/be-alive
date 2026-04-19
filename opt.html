@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>BeAlive - Options</title>
+    
+    <link rel="stylesheet" href="opt.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+
+<body>
+    <main class="container">
+        
+        <header>
+            <h1>BeAlive</h1>
+            <div class="quote-block">
+                <p class="quote-text">"Don't ask what the world needs. Ask what makes you come alive, and go do it. Because what the world needs is people who have come alive."</p>
+                <div class="quote-author">— Howard Thurman</div>
+            </div>
+        </header>
+
+        <div>
+            <section class="section-card">
+                <div class="section-header">
+                    <h3>Blocking Mode</h3>
+                </div>
+                
+                <div class="mode-selector">
+                    <label class="radio-label">
+                        <input type="radio" id="blacklist" name="mode" class="mode-radio" value="blacklist" checked>
+                        <span>Blacklist</span>
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" id="whitelist" name="mode" class="mode-radio" value="whitelist">
+                        <span>Whitelist</span>
+                    </label>
+                </div>
+            </section>
+
+            <section>
+                <div class="website-holder"></div>
+
+                <div>
+                    <button class="btn btn-secondary add-website">
+                        + Add Website
+                    </button>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="opt.js"></script>
+</body>
+</html>

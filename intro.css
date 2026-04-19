@@ -1,0 +1,72 @@
+/* Google Fonts for the popup */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --primary: #006f1c;
+    --surface: #f8fafa;
+    --surface-container-low: #f0f4f4;
+    --on-surface: #2c3435;
+    --secondary: #4d626c;
+    --error: #a73b21;
+    /* Set both variables to Inter */
+    --font-headline: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+}
+
+body {
+    width: 320px;
+    padding: 24px;
+    margin: 0;
+    background-color: var(--surface);
+    font-family: var(--font-body);
+}
+
+.header-container {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+h2 {
+    margin: 0;
+    font-family: var(--font-headline);
+    color: var(--on-surface);
+}
+
+.status-container {
+    background-color: var(--surface-container-low);
+    padding: 16px;
+    border-radius: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#status-icon {
+    font-size: 32px;
+    margin-bottom: 8px;
+    display: none; /* Kept hidden based on previous edits */
+}
+
+#status-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--on-surface);
+}
+
+.btn-modify {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    /* THIS LINE forces the button to use your chosen Inter font */
+    font-family: inherit; 
+}
+
+.btn-modify:hover {
+    opacity: 0.9;
+}
